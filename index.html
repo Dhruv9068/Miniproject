@@ -55,10 +55,21 @@
     </nav>
   </header>
 
+    </section>
+   <section class="slideshow">
+    <div class="maindiv">
 
+
+    </div>
+   </section>
+
+
+
+
+    
 
 <!-- slideshow -->
-    <div class="slideshow-container">
+    <!-- <div class="slideshow-container">
 
     <div class="mySlides fade">
       <div class="numbertext"></div>
@@ -79,35 +90,15 @@
     </div>
 
     </div>
-    <br>
+    <br> -->
 
     
 
-    <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-    </script>
-  </section>
+L
+  
     <!-- othercode -->
    
-    
+    <section class="Ourservice">
     <div div class="Food">
       <div class="foodsectionheading">Our Services :-</div>
      
@@ -151,9 +142,12 @@
 <section class="About_US">
 
       <div class="divaboutus">
-        <div class="aboutusheading">About Us</div>
-     <div class="textforAboutus">We Help You to Compare Best Deal For ordering food between various food service provider</div>
-     <div class="textforAboutus">We are here to save your money and provide you best quality</div>
+        <div class="aboutusheading">About Us :-</div>
+     <div class="textforAboutus"><pre>We Help You to Compare Best Deal For ordering food between various food service provider
+       
+      We are here to save your money and provide you best quality</pre>
+     </div>
+     
 
       </div>
 </section>
@@ -162,10 +156,31 @@
 
       <div class="divcontactus">
 
-        <div class="contact">Contact Us</div>
+        <div class="contact">Contact Us:-</div>
+        <div class="formdiv">
+          <form>
+            <fieldset><legend>Give feedback</legend>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+              </div>
+              <button class="button" type="submit">Submit</button>
+            </fieldset>
+            
+          </form>
+          
+        </div>
 
 
-
+      </div>
         
 
     </section>
@@ -173,7 +188,6 @@
 
   </body>
 </html>
-
 
 
 
