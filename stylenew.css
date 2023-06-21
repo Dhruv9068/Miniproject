@@ -60,18 +60,18 @@ body {
   font-weight: 300;
   line-height: 1.4;
   scroll-behavior: smooth;
-  background-color: black;
+  
 background-size: cover;
 width:100%;
 }
-.top{
+ /* .top{
   background-image: url("https://64.media.tumblr.com/16ffcbe37227b2b379a0a6cebccffac9/64c183b81454a72a-ca/s640x960/d1610df3c9c5d1d9c39498a5271f10bc86edce61.gifv");
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
 
 
-}
+}  */
 .textmain{
   font-size: 10rem;
   align-content: center;
@@ -168,56 +168,42 @@ nav ul li:hover {
   background-color:grey;
 
 }
-/* end */
-
-/* slideshowdesign start */
-.slideshow-container {
-  max-width: 60rem;
-  height:40rem;
-  position: relative;
-  margin: auto;
-
+/* slideshowcode */
+.slideshow{
+  width:100%;
+  height:60rem;
+  padding:5rem;
 }
-
-.dot {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0 ,2rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.maindiv{
+     width:70%;
+     height:60rem;
+     padding:3rem;
+     background-image:url('https://cdn.pixabay.com/photo/2023/03/05/16/20/sea-7831815_1280.jpg');
+     transform:translate(-50%,-50%) ;
+     position: absolute;
+     top:45%;
+     left:50%;
+     background-size: 100% 100%;
+     box-shadow:0.1rem 0.2rem 1rem 1rem lightsalmon ;
+     animation: slider 15s infinite linear;
+    
 }
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 200rem) {
-  .text {font-size: 11rem}
+@keyframes slider {
+  0%{background-image:url('https://cdn.pixabay.com/photo/2023/03/05/16/20/sea-7831815_1280.jpg');}
+  35%{ background-image:url('https://cdn.pixabay.com/photo/2014/12/16/22/25/sunset-570881_640.jpg');}
+  75%{background-image:url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_640.jpg');}
+  
 }
 /* end */
+
 
 /* food section start */
+.Ourservices{
+  background-color: aliceblue;
+  width:95%;
+  
+
+}
 .Food{
    
   background-color: white;
@@ -231,7 +217,10 @@ nav ul li:hover {
   width:100%;
   height:100rem;
   background-size: cover;
-  border: 1rem solid  #9A208C ;
+  border: 3px solid black;
+
+
+ 
   
 }
 
@@ -323,30 +312,35 @@ color: #9A208C;
   padding-top: 10rem;
   width:100%;
 align-items:center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 margin-top:10rem;
 background-color: white;
 
- background-repeat: no-repeat;
- background-size: cover;
+ 
+
  height: 80rem;
+ border: 3px solid black;
 
 }
 .aboutusheading{
- text-align: center;
+ margin-left: 100px;
 
- font-size:9rem;
+ font-size:10rem;
  width:80%;
  color:#9A208C;
- margin:0 auto 0 auto;
+
  font-family: Sacramento;
  font-weight: bold;
+ padding:5rem;
 }
 .textforAboutus{
- text-align:center;
- font-size:2.5rem;
+ 
+ font-size:3rem;
  color: #210062;
- padding: 2.5rem;
+ padding: 5rem;
+ text-align: center;
+ width:100%;
+ height:0.5rem;
 }
 
 .divcontactus{
@@ -361,10 +355,11 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: white;
 background-repeat: no-repeat;
 background-size: cover;
-  height:80rem;
+  height:120rem;
+  border: 3px solid black;
 }
 .contact{
-  text-align: center;
+  padding: 5rem;
 
   font-size:10rem;
   width:80%;
@@ -372,6 +367,46 @@ background-size: cover;
   color:#9A208C;
   margin:0 auto 0 auto;
   font-family: Sacramento;
+ 
 
 }
+.formdiv{
+  padding-left:50rem;
+  width:80%;
+}
+/* Styling form labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 30px;
+  padding:1rem;
+}
+fieldset{
+  padding:10rem;
+  
+  
+}
+legend{
+  font-size: 3rem;
+}
+/* Styling textboxes */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: .1rem solid #ccc;
+  border-radius: .4rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  
+}
+
+/* Additional styling for textareas */
+textarea {
+  height: 100px;
+}
+
+/* Styling the submit button */
 
