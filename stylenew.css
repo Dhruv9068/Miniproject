@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size:62.5%;
+  width:62.5%;
+  height:62.5%;
+
+/* ie 1 rpm ie 10px */
+}
+
+@media(max-width:968px)
+{
+  html{
+    font-size:50%;
+    width: 45%;
+    height:45%;
+    .image-grid {
+      
+      grid-template-columns: repeat(2, 1fr);
+     
+    
+      
+    }
+.Food{
+  height:150rem;
+}
+  
+    
+  }
+}
+@media(max-width:768px)
+{
+  html{
+    font-size:45%;
+    
+  }
+  .image-grid {
+    
+    grid-template-columns: repeat(2, 1fr);
+   
+  
+    
+  }
+  .Food{
+    height:150rem;
+  }
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  background-color: black;
+background-size: cover;
+width:100%;
+}
+.top{
+  background-image: url("https://64.media.tumblr.com/16ffcbe37227b2b379a0a6cebccffac9/64c183b81454a72a-ca/s640x960/d1610df3c9c5d1d9c39498a5271f10bc86edce61.gifv");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+
+}
+.textmain{
+  font-size: 10rem;
+  align-content: center;
+  color:white;
+}
+.slide2text{
+  font-size: 5rem;
+  font-weight: bold;
+  
+}
+section {
+  scroll-margin: 5rem;
+}
+ul {
+  font-family: cursive;
+  list-style: none;
+
+}
+.navigation{
+  font-size: 2rem;
+  margin-right: 20rem;
+
+
+}
+a {
+  text-decoration: none;
+  color: black;
+
+
+}
+.container {
+  max-width:100%;
+  margin: 0 auto;
+  background-color: white;
+
+}
+
+header {
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: .5rem .5rem .5rem rgb(21, 19, 19);
+
+}
+.logo{
+  padding-left: 5rem;
+}
+.slide2text{
+  color:white;
+}
+
+/* style navigation start */
+nav {
+  display:flex;
+  justify-content: space-between;
+width:100%;
+  color:#3B3486;
+  padding: 1rem 0;
+  padding-right: .5rem;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+  background-color: #000609;
+}
+nav ul {
+  display: flex;
+  gap: 8rem;
+
+
+}
+
+nav ul li {
+
+  padding:1rem;
+  border-bottom: .2rem solid transparent;
+  transition: 0.2s ease-in;
+  border:0.1rem solid #222;
+  background-color: white;
+
+
+}
+nav ul li:hover {
+  border-bottom: .2rem solid rgb(12, 1, 1);
+  transition: 0.2s ease-in;
+  background-color:grey;
+
+}
+/* end */
+
+/* slideshowdesign start */
+.slideshow-container {
+  max-width: 60rem;
+  height:40rem;
+  position: relative;
+  margin: auto;
+
+}
+
+.dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 ,2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 200rem) {
+  .text {font-size: 11rem}
+}
+/* end */
+
+/* food section start */
+.Food{
+   
+  background-color: white;
+  padding-top: 5rem;
+  align-items:center;
+  font-family:serif ;
+  font-size: 15rem;
+  margin-top:2.5rem;
+  
+  text-decoration:style;
+  width:100%;
+  height:100rem;
+  background-size: cover;
+  border: 1rem solid  #9A208C ;
+  
+}
+
+.foodsectionheading{
+  display: flex;
+  font-size:10rem;
+ margin:0 auto 0 auto;
+  
+  width:80%;
+  color:#9A208C;
+  padding: 5rem;
+  
+  font-weight:bold;
+  font-family:Sacramento;
+  gap:1rem ;
+  
+  }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+
+  
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  
+}
+
+.grid-item img {
+  width: 45rem;
+
+  height: 30rem;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; 
+  padding: 1.5rem;
+}
+
+.caption {
+  
+  margin-top: .5rem;
+  font-size:2rem;
+  padding: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
+  
+}
+.heading{
+color: #9A208C;
+  
+}
+.text{
+  font-size:4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left:10rem;
+  padding:3rem;
+}
+
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 1.5rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3.0rem;
+  margin: 5.0rem 4.0rem;
+  cursor: pointer;
+  align-items:center;
+  background-color: #9A208C;
+
+}
+
+
+.divaboutus{
+
+  padding-top: 10rem;
+  width:100%;
+align-items:center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top:10rem;
+background-color: white;
+
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 80rem;
+
+}
+.aboutusheading{
+ text-align: center;
+
+ font-size:9rem;
+ width:80%;
+ color:#9A208C;
+ margin:0 auto 0 auto;
+ font-family: Sacramento;
+ font-weight: bold;
+}
+.textforAboutus{
+ text-align:center;
+ font-size:2.5rem;
+ color: #210062;
+ padding: 2.5rem;
+}
+
+.divcontactus{
+
+  padding-top:1rem;
+  width:100%;
+  margin-top:10rem;
+
+align-items:center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background-color: white;
+background-repeat: no-repeat;
+background-size: cover;
+  height:80rem;
+}
+.contact{
+  text-align: center;
+
+  font-size:10rem;
+  width:80%;
+  font-weight:bold;
+  color:#9A208C;
+  margin:0 auto 0 auto;
+  font-family: Sacramento;
+
+}
+
